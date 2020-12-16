@@ -81,7 +81,7 @@ class _InternuiState extends State<Internui> {
               color: Colors.grey[600],
               borderRadius:BorderRadius.circular(5)
            ),
-            margin: EdgeInsets.only(top:250,right:90),
+            margin: EdgeInsets.only(top:250,right:.2*MediaQuery.of(context).size.width),
             child:Text("Neutral",style: TextStyle(fontSize: 19,color: Colors.white,fontWeight: FontWeight.w900),) ,),
         Container(
           margin: EdgeInsets.only(right:15),
@@ -202,18 +202,18 @@ SizedBox(height:12),
                 children: [
                   SizedBox(width:11)
 ,                  Text("7",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
-                  SizedBox(width:MediaQuery.of(context).size.width-280),
+                  SizedBox(width:.3*MediaQuery.of(context).size.width),
                   Text("-",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold)),
-                  SizedBox(width:MediaQuery.of(context).size.width-295),
+                  SizedBox(width:.3*MediaQuery.of(context).size.width),
                   Text("5",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold))
                 ],
               ),
               Row(
                 children: [
                   Text("Buy",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey),),
-                  SizedBox(width:MediaQuery.of(context).size.width-315),
+                  SizedBox(width:.2*MediaQuery.of(context).size.width),
                   Text("Neutral",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey)),
-                  SizedBox(width:MediaQuery.of(context).size.width-330),
+                  SizedBox(width:.22*MediaQuery.of(context).size.width),
                   Text("Sell",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey))
                 ],
               )
@@ -241,7 +241,7 @@ SizedBox(height:12),
             Text("TITLE",style: TextStyle(color: Colors.grey,fontSize: 17),),
             SizedBox(width:90),
             Text("VALUE",style: TextStyle(color: Colors.grey,fontSize: 17)),
-            SizedBox(width:90),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("TYPE",style: TextStyle(color: Colors.grey,fontSize: 17))
           ],)
         ),
@@ -257,7 +257,7 @@ SizedBox(height:12),
             Text("MA10",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold),),
             SizedBox(width:78),
             Text("465.28",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("SELL",style: TextStyle(color: Colors.red,fontSize: 19,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -273,7 +273,7 @@ SizedBox(height:12),
             Text("MA20",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold),),
             SizedBox(width:78),
             Text("465.28",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("BUY",style: TextStyle(color: Colors.blue,fontSize: 19,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -289,7 +289,7 @@ SizedBox(height:12),
             Text("MA50",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold),),
             SizedBox(width:78),
             Text("465.28",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("BUY",style: TextStyle(color: Colors.blue,fontSize: 19,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -304,7 +304,7 @@ SizedBox(height:12),
             Text("MA100",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold),),
             SizedBox(width:67),
             Text("465.28",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("SELL",style: TextStyle(color: Colors.red,fontSize: 19,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -319,7 +319,7 @@ SizedBox(height:12),
             Text("MA200",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold),),
             SizedBox(width:67),
             Text("465.28",style: TextStyle(color: Colors.black,fontSize: 19,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("BUY",style: TextStyle(color: Colors.blue,fontSize: 19,fontWeight: FontWeight.bold))
           ],)
         )
@@ -349,16 +349,16 @@ SizedBox(height:12),
                 children: [
                   SizedBox(width:11)
 ,                  Text("1",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
-                  SizedBox(width:MediaQuery.of(context).size.width-280),
+                  SizedBox(width:.30*MediaQuery.of(context).size.width),
                   Text("1",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold)),
-                  SizedBox(width:MediaQuery.of(context).size.width-295),
+                  SizedBox(width:.30*MediaQuery.of(context).size.width),
                   Text("9",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold))
                 ],
               ),
               Row(
                 children: [
                   Text("Buy",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey),),
-                  SizedBox(width:92),
+                  SizedBox(width:.22*MediaQuery.of(context).size.width),
                   Text("Neutral",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey)),
                   SizedBox(width:89),
                   Text("Sell",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey))
@@ -389,7 +389,7 @@ Container(
             Text("NAME",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500),),
             SizedBox(width:90),
             Text("ACTION",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500)),
-            SizedBox(width:76),
+            SizedBox(width:.19*MediaQuery.of(context).size.width),
             Text("VALUE",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500))
           ],)
         ),
@@ -404,7 +404,7 @@ Container(
             Text("RSI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:72),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:69),
+            SizedBox(width:.18*MediaQuery.of(context).size.width),
             Text("Neutral",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -420,7 +420,7 @@ Container(
             Text("STOCH(9,6)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:38),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:85),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -436,7 +436,7 @@ Container(
             Text("STOCHRSI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:16),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -451,7 +451,7 @@ Container(
             Text("MACD(12,6)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:38),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Buy",style: TextStyle(color: Colors.blue,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -466,7 +466,7 @@ Container(
             Text("ADX(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:71),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -481,7 +481,7 @@ SizedBox(height:8),
             Text("Williams%R",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:43),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -497,7 +497,7 @@ SizedBox(height:8),
             Text("CCI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:75),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -513,7 +513,7 @@ SizedBox(height:8),
             Text("ATR(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:69),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -528,7 +528,7 @@ SizedBox(height:8),
             Text("High/Low(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:22),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -543,7 +543,7 @@ SizedBox(height:8),
             Text("Ultimate\nOscillator",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:57),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -558,7 +558,7 @@ SizedBox(height:8),
             Text("ROC",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:100),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:84),
+            SizedBox(width:.22*MediaQuery.of(context).size.width),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
