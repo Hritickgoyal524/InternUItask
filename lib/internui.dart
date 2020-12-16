@@ -81,7 +81,7 @@ class _InternuiState extends State<Internui> {
               color: Colors.grey[600],
               borderRadius:BorderRadius.circular(5)
            ),
-            margin: EdgeInsets.only(top:MediaQuery.of(context).size.height-630,right:90),
+            margin: EdgeInsets.only(top:250,right:90),
             child:Text("Neutral",style: TextStyle(fontSize: 19,color: Colors.white,fontWeight: FontWeight.w900),) ,),
         Container(
           margin: EdgeInsets.only(right:15),
@@ -178,7 +178,7 @@ SizedBox(height:12),
 
 
 
-            SizedBox(height:MediaQuery.of(context).size.height-840),
+            SizedBox(height:45),
            Center(child:Text("Moving Averages",style:TextStyle(fontSize: 23,fontWeight: FontWeight.bold)))
            ,SizedBox(height:6),
           
@@ -198,7 +198,7 @@ SizedBox(height:12),
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
               Row(
-                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                
                 children: [
                   SizedBox(width:11)
 ,                  Text("7",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
@@ -223,14 +223,14 @@ SizedBox(height:12),
 
     ),
 
-    SizedBox(height:MediaQuery.of(context).size.height-750),
+    SizedBox(height:75),
     Container(
      
       child:
     Column(
       children: [
         Container(
-           margin: EdgeInsets.only(left:5,right:20),
+           margin: EdgeInsets.only(left:5,right:.05*MediaQuery.of(context).size.width),
           height: 50,
           decoration: BoxDecoration(color: Colors.grey[300].withOpacity(.3),
           borderRadius: BorderRadius.circular(6) ),
@@ -247,6 +247,7 @@ SizedBox(height:12),
         ),
         SizedBox(height:8),
         Container(
+         // padding: EdgeInsets.only(right:20),
           height: 40,
           
           child:Row(
@@ -324,7 +325,7 @@ SizedBox(height:12),
         )
       ],
     )),
-    SizedBox(height:MediaQuery.of(context).size.height-820),
+    SizedBox(height:60),
     Center(child: Text("Technical Indicators",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w900),),)
     
     ,
@@ -337,7 +338,7 @@ SizedBox(height:12),
                 shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(7.0)),
                onPressed: (){},
            ),
-           SizedBox(height:12),
+           SizedBox(height:15),
             Container(margin: EdgeInsets.only(left:33),
               child:
             Column(
@@ -357,9 +358,9 @@ SizedBox(height:12),
               Row(
                 children: [
                   Text("Buy",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey),),
-                  SizedBox(width:MediaQuery.of(context).size.width-315),
+                  SizedBox(width:92),
                   Text("Neutral",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey)),
-                  SizedBox(width:MediaQuery.of(context).size.width-330),
+                  SizedBox(width:89),
                   Text("Sell",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.grey))
                 ],
               ),
@@ -377,7 +378,7 @@ Container(
     Column(
       children: [
         Container(
-           margin: EdgeInsets.only(left:5,right:20),
+           margin: EdgeInsets.only(left:5,right:.05*MediaQuery.of(context).size.width),
           height: 50,
           decoration: BoxDecoration(color: Colors.grey[300].withOpacity(.3),
           borderRadius: BorderRadius.circular(6) ),
@@ -388,7 +389,7 @@ Container(
             Text("NAME",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500),),
             SizedBox(width:90),
             Text("ACTION",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500)),
-            SizedBox(width:80),
+            SizedBox(width:76),
             Text("VALUE",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.w500))
           ],)
         ),
@@ -403,7 +404,7 @@ Container(
             Text("RSI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:72),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:71),
+            SizedBox(width:69),
             Text("Neutral",style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -419,7 +420,7 @@ Container(
             Text("STOCH(9,6)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:38),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:90),
+            SizedBox(width:85),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -435,7 +436,7 @@ Container(
             Text("STOCHRSI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:16),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -450,7 +451,7 @@ Container(
             Text("MACD(12,6)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:38),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Buy",style: TextStyle(color: Colors.blue,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -465,7 +466,7 @@ Container(
             Text("ADX(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:71),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -480,7 +481,7 @@ SizedBox(height:8),
             Text("Williams%R",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:43),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -496,7 +497,7 @@ SizedBox(height:8),
             Text("CCI(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:75),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -512,7 +513,7 @@ SizedBox(height:8),
             Text("ATR(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:69),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -527,7 +528,7 @@ SizedBox(height:8),
             Text("High/Low(14)",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:22),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:88),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -542,7 +543,7 @@ SizedBox(height:8),
             Text("Ultimate\nOscillator",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:57),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:89),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
@@ -557,15 +558,15 @@ SizedBox(height:8),
             Text("ROC",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),),
             SizedBox(width:100),
             Text("-53.6549",style: TextStyle(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold)),
-            SizedBox(width:89),
+            SizedBox(width:84),
             Text("Sell",style: TextStyle(color: Colors.red,fontSize: 17,fontWeight: FontWeight.bold))
           ],)
         ),
       ],
     )),
-    SizedBox(height:MediaQuery.of(context).size.height-820)
+    SizedBox(height:55)
 ,    Center(child: Text("Pivot Points",style: TextStyle(fontSize: 23,fontWeight: FontWeight.w900),),)
-,SizedBox(height:MediaQuery.of(context).size.height-800),
+,SizedBox(height:70),
 Container(
  
   margin: EdgeInsets.only(left:2,right:22),
